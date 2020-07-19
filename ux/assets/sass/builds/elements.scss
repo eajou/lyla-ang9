@@ -1,9 +1,11 @@
 // Global Variables
 @import '../utilities/variables';
+@import '../utilities/mixins';
 
 // Import Components 
 @import '../base/global';
 
 @import '../components/header';
 @import '../components/navigation';
+@import '../components/body';
 @import '../components/buttons';
