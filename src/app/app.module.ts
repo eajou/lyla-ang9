@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { BodyComponent } from './body/body.component';
+import { HomeComponent } from './home/home.component';
+import { GrimmComponent } from './grimm/grimm.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { BodyComponent } from './body/body.component';
     HeaderComponent,
     FooterComponent,
     NavigationComponent,
-    BodyComponent
+    HomeComponent,
+    GrimmComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
