@@ -34,7 +34,7 @@ gulp.task('cleanCSS', function () {
 //     }
 // ));
 
-gulp.task('watchTask', function() {    
+gulp.task('watch', function() {    
     watch('ux/assets/sass/**/*.scss', 
         gulp.series(['build:ux']));
 });
