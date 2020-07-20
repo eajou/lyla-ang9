@@ -9,7 +9,8 @@ body {
 
 h1, h2, h3, h4 {
 	font-family: $fancyFont;
-	color: #332a1f;
+	color: #d5c9be;
+	@include textShadow;
 }
 
 h3 {

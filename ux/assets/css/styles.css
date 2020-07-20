@@ -13,6 +13,7 @@
   Fonts
 ============================================================
 */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
 /*
 ============================================================
   Images
@@ -27,8 +28,9 @@ body {
   box-sizing: border-box; }
 
 h1, h2, h3, h4 {
-  font-family: "Vollkorn", serif;
-  color: #332a1f; }
+  font-family: "Cinzel Decorative", cursive;
+  color: #d5c9be;
+  text-shadow: 0 0 1.5rem #4f443b, -0.2rem 0.1rem 1rem #4f443b,  0.2rem 0.1rem 1rem #4f443b; }
 
 h3 {
   font-size: 24px;
@@ -82,6 +84,95 @@ a {
   width: 100%;
   margin: 0 auto; }
 
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #4f4943;
+    text-shadow: 0 0 1.5rem #4f443b, -0.2rem 0.1rem 1rem #4f443b,  0.2rem 0.1rem 1rem #4f443b; }
+  28%,
+  33% {
+    color: #91979b; } }
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite; }
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite; }
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none; }
+  100% {
+    color: #d5c9be;
+    text-shadow: 0 0 1.5rem #d3b49b, -0.2rem 0.1rem 1rem #d3b49b,  0.2rem 0.1rem 1rem #d3b49b; } }
+
+@keyframes flicker {
+  from {
+    opacity: 1; }
+  4% {
+    opacity: 0.9; }
+  6% {
+    opacity: 0.85; }
+  8% {
+    opacity: 0.95; }
+  10% {
+    opacity: 0.9; }
+  11% {
+    opacity: 0.922; }
+  12% {
+    opacity: 0.9; }
+  14% {
+    opacity: 0.95; }
+  16% {
+    opacity: 0.98; }
+  17% {
+    opacity: 0.9; }
+  19% {
+    opacity: 0.93; }
+  20% {
+    opacity: 0.99; }
+  24% {
+    opacity: 1; }
+  26% {
+    opacity: 0.94; }
+  28% {
+    opacity: 0.98; }
+  37% {
+    opacity: 0.93; }
+  38% {
+    opacity: 0.5; }
+  39% {
+    opacity: 0.96; }
+  42% {
+    opacity: 1; }
+  44% {
+    opacity: 0.97; }
+  46% {
+    opacity: 0.94; }
+  56% {
+    opacity: 0.9; }
+  58% {
+    opacity: 0.9; }
+  60% {
+    opacity: 0.99; }
+  68% {
+    opacity: 1; }
+  70% {
+    opacity: 0.9; }
+  72% {
+    opacity: 0.95; }
+  93% {
+    opacity: 0.93; }
+  95% {
+    opacity: 0.95; }
+  97% {
+    opacity: 0.93; }
+  to {
+    opacity: 1; } }
+
 #pageTop {
   display: block;
   height: 60px;
@@ -126,7 +217,7 @@ nav {
       display: inline-block;
       padding: 0 20px;
       margin: 0 10px;
-      font-family: "Vollkorn", serif;
+      font-family: "Cinzel Decorative", cursive;
       font-weight: 600;
       font-style: italic; }
       nav ul li a {
@@ -142,22 +233,61 @@ nav {
 section {
   background: url("./assets/layout/paper.png");
   box-sizing: border-box;
-  padding: 30px 20px; }
+  padding: 30px; }
 
 .series-display {
   width: 100%; }
-  .series-display .row {
-    display: flex; }
-  .series-display .top {
+  .series-display .series,
+  .series-display .book {
+    display: flex;
+    justify-content: center;
+    background-position: top left;
+    background-size: cover; }
+  .series-display .image,
+  .series-display .info {
+    flex: 1 0 0; }
+  .series-display .image {
+    max-width: 400px;
+    overflow: hidden; }
+    .series-display .image img {
+      width: 100%; }
+  .series-display .info {
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center; }
+    .series-display .info h1 {
+      font-size: 2.5em; }
+    .series-display .info h2 {
+      font-size: 2em; }
+  .series-display #grimm {
+    background-image: url("./assets/series/grimm-bkg.png"); }
+    .series-display #grimm img {
+      margin-bottom: -150px; }
+  .series-display #red {
+    background-image: url("./assets/series/red-bkg.png"); }
+    .series-display #red .image {
+      overflow: visible; }
+      .series-display #red .image img {
+        margin-top: -30px;
+        margin-bottom: -4px; }
+  .series-display .book {
+    background-image: url("./assets/layout/paper.png");
     display: block; }
-  .series-display .bottom {
-    flex: 1; }
-  .series-display .top, .series-display .bottom {
-    height: 400px;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat; }
-  .series-display .grimm {
-    background-image: url("./assets/series/grimm.jpg"); }
-  .series-display .red {
-    background-image: url("./assets/series/red.jpg"); }
+    .series-display .book:after {
+      content: "";
+      clear: both;
+      display: table; }
+    .series-display .book .info {
+      display: block;
+      flex: none;
+      float: left;
+      max-width: 460px; }
+    .series-display .book .image {
+      display: block;
+      flex: none;
+      float: right;
+      overflow: visible;
+      max-width: 600px;
+      margin-left: -100px; }
+      .series-display .book .image img {
+        margin-bottom: -4px; }

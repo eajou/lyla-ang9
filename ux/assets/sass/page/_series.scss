@@ -1,30 +1,89 @@
 .series-display {
     width: 100%;
 
-    .row {
+    .series,
+    .book {
         display: flex;
-    }
-
-    .top {
-        display: block;
-    }
-    
-    .bottom {
-        flex: 1;
-    }
-
-    .top, .bottom {
-        height: 400px;
+        justify-content: center;
+        background-position: top left;
         background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;        
     }
 
-    .grimm {
-        background-image: url('./assets/series/grimm.jpg');
+    .image,
+    .info {
+        flex: 1 0 0;
     }
 
-    .red {
-        background-image: url('./assets/series/red.jpg');
-    }           
+    .image {
+        max-width: 400px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info {
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+
+        h1 {
+            font-size: 2.5em;
+        }   
+        
+        h2 {
+            font-size: 2em;
+        }
+    }
+
+    #grimm {
+        background-image: url('./assets/series/grimm-bkg.png');
+
+        img {
+            margin-bottom: -150px;
+        }    
+    }
+
+    #red {
+        background-image: url('./assets/series/red-bkg.png');
+
+        .image {
+            overflow: visible;
+
+            img {
+                margin-top: -30px;
+                margin-bottom: -4px;
+            }            
+        }     
+    }  
+    
+    .book {
+        background-image: url('./assets/layout/paper.png');
+        display: block;
+
+        &:after {
+            @include clearFix;
+        }
+        
+        .info {
+            display: block;
+            flex: none;
+            float: left;
+            max-width: 460px;
+        }
+
+        .image {
+            display: block;
+            flex: none;
+            float: right;
+            overflow: visible;   
+            max-width: 600px;
+            margin-left: -100px;
+
+            img {
+                margin-bottom: -4px;
+            }
+        }
+    }
 }
