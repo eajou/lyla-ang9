@@ -25,15 +25,6 @@ gulp.task('cleanCSS', function () {
 });
 
 // Watch the files
-// gulp.task('watch', gulp.series (
-//     // gulp.parallel(sass),
-//     // watch,
-//     watch('ux/assets/sass/**/*.scss'),  
-//     function(done) {
-//         console.log("Here"); done() 
-//     }
-// ));
-
 gulp.task('watch', function() {    
     watch('ux/assets/sass/**/*.scss', 
         gulp.series(['build:ux']));
