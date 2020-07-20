@@ -1,8 +1,13 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
+    prefix = require('gulp-autoprefixer');
     cleanCSS = require('gulp-clean-css'),
     watch = require('gulp-watch');
+
+function onError(err) {
+    console.log(err);
+}    
 
 // SASS functions
 gulp.task('sass', function () {
@@ -13,8 +18,15 @@ gulp.task('sass', function () {
         .pipe(sass())
         .on("error", sass.logError)
 
-        .pipe(gulp.dest("ux/assets/css"))
+        .pipe(gulp.dest("ux/assets/css-prefix"))
     );
+});
+
+// Autoprefix
+gulp.task('addPrefix', function() {
+    return gulp.src('ux/assets/css-prefix/*.css')
+    .pipe(prefix())
+    .pipe(gulp.dest('ux/assets/css'));
 });
 
 // Clean the CSS
@@ -37,4 +49,4 @@ gulp.task('watch', function() {
 ==============
 */
 
-gulp.task('build:ux', gulp.series('sass', 'cleanCSS'));
+gulp.task('build:ux', gulp.series('sass', 'addPrefix', 'cleanCSS'));
