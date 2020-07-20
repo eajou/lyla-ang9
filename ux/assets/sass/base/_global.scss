@@ -10,7 +10,16 @@ body {
 h1, h2, h3, h4 {
 	font-family: $fancyFont;
 	color: #d5c9be;
+	letter-spacing: 2px;
 	@include textShadow;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
 }
 
 h3 {
@@ -72,4 +81,14 @@ a {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+}
+
+.damask {
+    background: url('./assets/layout/main_damask.png');
+}
+
+.space {
+    display: block;
+    height: 60px;
+    width: 100%;
 }

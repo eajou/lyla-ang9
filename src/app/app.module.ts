@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { GrimmComponent } from './grimm/grimm.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SeriesComponent } from './series/series.component';
+import { ContactComponent } from './contact/contact.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SeriesComponent } from './series/series.component';
     NavigationComponent,
     HomeComponent,
     GrimmComponent,
-    SeriesComponent
+    SeriesComponent,
+    ContactComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

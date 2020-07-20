@@ -30,7 +30,14 @@ body {
 h1, h2, h3, h4 {
   font-family: "Cinzel Decorative", cursive;
   color: #d5c9be;
+  letter-spacing: 2px;
   text-shadow: 0 0 1.5rem #4f443b, -0.2rem 0.1rem 1rem #4f443b,  0.2rem 0.1rem 1rem #4f443b; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
 
 h3 {
   font-size: 24px;
@@ -83,6 +90,14 @@ a {
   max-width: 960px;
   width: 100%;
   margin: 0 auto; }
+
+.damask {
+  background: url("./assets/layout/main_damask.png"); }
+
+.space {
+  display: block;
+  height: 60px;
+  width: 100%; }
 
 @keyframes blink {
   0%,
@@ -235,6 +250,46 @@ section {
   box-sizing: border-box;
   padding: 30px; }
 
+footer {
+  margin: 50px auto 10px auto;
+  text-align: center; }
+  footer p {
+    color: #948271;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
+  footer .social {
+    margin: 0; }
+    footer .social .icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 0 2px; }
+      footer .social .icon .fab {
+        text-align: center;
+        display: block;
+        line-height: 40px;
+        color: #948271; }
+      footer .social .icon:last-of-type {
+        margin-right: 0; }
+      footer .social .icon:hover .fab, footer .social .icon:focus .fab {
+        color: #000000; }
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  height: 50px;
+  width: 50px;
+  background: #282827;
+  border-radius: 50%;
+  cursor: pointer; }
+  .scroll-top img {
+    width: 100%; }
+  .scroll-top:hover {
+    background: #000000; }
+
 .series-display {
   width: 100%; }
   .series-display .series,
@@ -255,10 +310,6 @@ section {
     padding: 30px;
     box-sizing: border-box;
     text-align: center; }
-    .series-display .info h1 {
-      font-size: 2.5em; }
-    .series-display .info h2 {
-      font-size: 2em; }
   .series-display #grimm {
     background-image: url("./assets/series/grimm-bkg.png"); }
     .series-display #grimm img {
