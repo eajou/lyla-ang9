@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SeriesComponent } from './series/series.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeroComponent } from './hero/hero.component';
+import { RedComponent } from './red/red.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroComponent } from './hero/hero.component';
     GrimmComponent,
     SeriesComponent,
     ContactComponent,
-    HeroComponent
+    HeroComponent,
+    RedComponent
   ],
   imports: [
     BrowserModule,

@@ -197,23 +197,27 @@ a {
 header {
   width: 100%;
   height: 500px;
-  margin: 0 0 240px 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box; }
   header .hero {
-    background: url("./assets/layout/home.jpg") fixed bottom center;
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
     position: relative; }
-    header .hero .logo {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin: 0 0 -200px -200px;
-      width: 400px; }
-      header .hero .logo img {
-        width: 100%; }
+
+#home-page .hero {
+  background-image: url("./assets/layout/home.jpg");
+  background-position: bottom center; }
+
+#grimm-page .hero {
+  background-image: url("./assets/series-grimm/header-grimm.png");
+  background-position: top left; }
+
+#red-page .hero {
+  background-image: url("./assets/series-red/header-red.png");
+  background-position: top left; }
 
 /******************************************
 
@@ -238,10 +242,13 @@ nav {
       nav ul li a {
         color: #d5c1a0;
         display: block; }
-        nav ul li a:after {
+        nav ul li a:hover {
+          cursor: select; }
+      nav ul li .active-link {
+        color: #e8b8b2; }
+        nav ul li .active-link:after {
           display: block;
           content: '';
-          width: 30px;
           height: 30px;
           background: url("./assets/layout/rose-nav.png") no-repeat center center; }
 
@@ -249,6 +256,25 @@ section {
   background: url("./assets/layout/paper.png");
   box-sizing: border-box;
   padding: 30px; }
+
+.subhead {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/assets/layout/rock.png");
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .subhead .logo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px; }
+    .subhead .logo img {
+      width: 100%;
+      filter: drop-shadow(0 0 10px #313130); }
+
+#grimm-page .logo {
+  padding: 30px;
+  box-sizing: border-box; }
 
 footer {
   margin: 50px auto 10px auto;

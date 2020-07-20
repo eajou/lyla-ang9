@@ -25,19 +25,22 @@ nav {
             a {
                 color: #d5c1a0;
                 display: block;
-    
-                    // a {
-                    //     color: #e8b8b2;
-                    // }
-                
+
+                &:hover {
+                    cursor: select;
+                }
+            }
+
+            .active-link {
+                color: #e8b8b2;
+                    
                 &:after {
                     display: block;
                     content: '';
-                    width: 30px;
                     height: 30px;
                     background: $rose no-repeat center center;                        
                 }
-            }
+            }            
         }        
 	}
 }

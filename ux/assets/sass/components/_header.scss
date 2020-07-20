@@ -8,27 +8,30 @@
 header {
     width: 100%;
     height: 500px;
-    margin: 0 0 240px 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     .hero {
-        background: url('./assets/layout/home.jpg') fixed bottom center;
+        background-attachment: fixed;
         background-size: cover;
         width: 100%;
         height: 100%;
         position: relative;
-
-        .logo {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            margin: 0 0 -200px -200px;
-            width: 400px;
-
-            img {
-                width: 100%;
-            }
-        }
     }
+}
+
+#home-page .hero {
+    background-image: url('./assets/layout/home.jpg');
+    background-position: bottom center;
+}
+
+#grimm-page .hero {
+    background-image: url('./assets/series-grimm/header-grimm.png');
+    background-position: top left;
+}
+
+#red-page .hero {
+    background-image: url('./assets/series-red/header-red.png');
+    background-position: top left;
 }
