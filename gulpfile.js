@@ -18,20 +18,14 @@ gulp.task('sass', function () {
         .pipe(sass())
         .on("error", sass.logError)
 
-        .pipe(gulp.dest("ux/assets/css-prefix"))
+        .pipe(gulp.dest("ux/assets/css"))
     );
-});
-
-// Autoprefix
-gulp.task('addPrefix', function() {
-    return gulp.src('ux/assets/css-prefix/*.css')
-    .pipe(prefix())
-    .pipe(gulp.dest('ux/assets/css'));
 });
 
 // Clean the CSS
 gulp.task('cleanCSS', function () {
     return gulp.src('ux/assets/css/*.css')
+    .pipe(prefix())
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('src'));    
 });
@@ -49,4 +43,4 @@ gulp.task('watch', function() {
 ==============
 */
 
-gulp.task('build:ux', gulp.series('sass', 'addPrefix', 'cleanCSS'));
+gulp.task('build:ux', gulp.series('sass', 'cleanCSS'));
