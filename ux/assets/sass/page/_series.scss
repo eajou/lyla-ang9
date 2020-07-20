@@ -1,0 +1,30 @@
+.series-display {
+    width: 100%;
+
+    .row {
+        display: flex;
+    }
+
+    .top {
+        display: block;
+    }
+    
+    .bottom {
+        flex: 1;
+    }
+
+    .top, .bottom {
+        height: 400px;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;        
+    }
+
+    .grimm {
+        background-image: url('./assets/series/grimm.jpg');
+    }
+
+    .red {
+        background-image: url('./assets/series/red.jpg');
+    }           
+}

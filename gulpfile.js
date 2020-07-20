@@ -46,7 +46,4 @@ gulp.task('watch', function() {
 ==============
 */
 
-// gulp.task('build:ux', ['sass', 'cleanCSS']);
-
-
 gulp.task('build:ux', gulp.series('sass', 'cleanCSS'));

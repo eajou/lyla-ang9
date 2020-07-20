@@ -8,6 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { GrimmComponent } from './grimm/grimm.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SeriesComponent } from './series/series.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     NavigationComponent,
     HomeComponent,
-    GrimmComponent
+    GrimmComponent,
+    SeriesComponent
   ],
   imports: [
     BrowserModule,

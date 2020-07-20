@@ -1,9 +1,13 @@
-<div class="page-top"></div>
+<div id="pageTop"></div>
 
-<header>    
+<div *ngIf="!hasRoute('series')">
+  <header>    
     <div class="hero">
-        <div class="logo">
-            <img alt="Logo" src="/assets/logo-author.png" />
-        </div>
+      <div class="logo">
+        <img alt="Logo" src="/assets/logo-author.png" />
+      </div>
     </div>       
-</header>
+  </header>
+
+  <app-navigation></app-navigation>    
+</div>
