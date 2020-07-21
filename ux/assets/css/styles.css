@@ -368,3 +368,12 @@ footer {
       margin-left: -100px; }
       .series-display .book .image img {
         margin-bottom: -4px; }
+
+#blood {
+  background-image: url("./assets/series-grimm/bkg-blood.png"); }
+
+#hidden {
+  background-image: url("./assets/series-grimm/bkg-hidden.png"); }
+  #hidden .image img {
+    margin-top: -30px;
+    margin-bottom: -4px; }

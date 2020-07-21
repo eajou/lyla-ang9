@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormBuilder} from '@angular/forms';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html'
+  selector: 'app-grimm-ghost',
+  templateUrl: './grimm-ghost.component.html'
 })
-export class ContactComponent implements OnInit {
+export class GrimmGhostComponent implements OnInit {
 
   constructor(
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
   }
 
-  pageLink = 'grimm';
+  pageLink = 'ghost';
 
   hasRoute(route: string) {
     return this.router.url.includes(route);
-  } 
+  }
 }
+
