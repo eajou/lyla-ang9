@@ -12,19 +12,12 @@
   <div id="" class="container">
     <section>
 
-      <!-- <a routerLink="/grimm-origins">Origins</a><br /><br />
-      <a routerLink="/grimm-ghost">Ghost</a><br /><br />
-      <a routerLink="/grimm-blood">Blood</a><br /><br />
-      <a routerLink="/grimm-hidden">Hidden</a><br /><br />
-      <a routerLink="/grimm-balance">Balance</a> -->
-
-      <!-- <h2>My favorite book is: {{myBook.name}}</h2> -->
-      <p>Books:</p>
       <ul>
         <li *ngFor="let book of books">
-          {{ book }}
-        </li>
+          <a routerLink="grimm-{{ book.name }}" class="link">{{ book.name }}</a>
+          </li>
       </ul>
+      <p *ngIf="books.length > 3">There are {{books.length}} books!</p>      
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 

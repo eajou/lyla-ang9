@@ -6,7 +6,7 @@
         background-image: url('./assets/series-grimm/bkg-origins.png');        
 
         .image {
-            margin-bottom: -4px;
+            margin-bottom: $image-align;
             max-width: 100%;
         }
     } 
