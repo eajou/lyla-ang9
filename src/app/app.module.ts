@@ -36,7 +36,7 @@ import { ConsultingComponent } from './consulting/consulting.component';
     GrimmGhostComponent,
     GrimmOriginsComponent,
     GrimmBalanceComponent,
-    ConsultingComponent
+    ConsultingComponent,
   ],
   imports: [
     BrowserModule,

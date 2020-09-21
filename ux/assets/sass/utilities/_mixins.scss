@@ -23,3 +23,27 @@
 		-0.2rem 0.1rem 1rem #4f443b, 
 		0.2rem 0.1rem 1rem #4f443b;
 }
+
+@mixin bookTables {
+	.series-display {
+		.book {
+			display: table;
+	
+			.image,
+			.info {
+				float: none;
+				display: table-cell;
+				vertical-align: middle;
+			}
+	
+			.image {
+				margin-left: 0;
+			}
+
+			.info {
+				padding-right: 0;
+				padding-left: 60px;
+			}
+		}
+	}	
+}

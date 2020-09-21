@@ -1,6 +1,14 @@
 .series-display {
     width: 100%;
 
+    .teaser {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
     .series,
     .book {
         display: flex;
@@ -29,7 +37,7 @@
         text-align: center;
     }
 
-    #grimm {
+    #seriesGrimm {
         background-image: url('./assets/series/grimm-bkg.png');
 
         img {
@@ -37,15 +45,16 @@
         }    
     }
 
-    #red {
+    #seriesRed {
         background-image: url('./assets/series/red-bkg.png');
 
         .image {
             overflow: visible;
 
             img {
+                width: 120%;
                 margin-top: -30px;
-                margin-bottom: -4px;
+                margin-bottom: -6px;
             }            
         }     
     }  
