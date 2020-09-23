@@ -12,13 +12,15 @@ export class OriginsComponent implements OnInit {
     private router: Router,
   ) {}
 
-  @Input() bookName: string;
-  @Input() bookTag:  string;
-  @Input() bookDesc: string;  
-  @Input() bookLink: string;
+  @Input() bookName:    string;
+  @Input() bookOpening: string;
+  @Input() bookTag:     string;
+  @Input() bookDesc:    string;  
+  @Input() bookLink:    string;
 
   ngOnInit(): void {
     this.bookName = 'Origins';
+    this.bookOpening = 'There’s new beginnings in every ending.';
     this.bookTag = 'Bianca, a timid and shy university student, has no choice but to step outside her comfort zone to seek answers to her ghostly problems. The only problem is that, because of what she finds, she now has more questions than before.';
     this.bookDesc = ' \
     <p>The things I see aren’t for the faint of heart.</p> \
