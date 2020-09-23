@@ -1,11 +1,51 @@
-<p>origins works!</p>
+<div id="{{pageLink}}">
+
+  <app-navigation></app-navigation>
+
+  <div class="container">
+    <div class="series-display">
+  
+    <div id="{{pageID}}" class="series">
+
+      <div class="image">
+          <img src="/assets/series-grimm/header-origins.png" alt="Grimm Cases Series" />
+      </div>     
+
+      <div class="info">
+
+        <h1>Origins</h1>
+
+        <p>There's new beginnings in every ending.</p>     
+      
+        <button>
+          <a href="{{bookLink}}" target="_blank">Buy Now 2</a>
+        </button>                 
+      
+      </div>         
+    </div>       
+  
+    <div class="book">
+      <div class="info">
+        <p innerHTML="{{bookTag}}"></p>
+      </div>
+  
+      <div class="image">
+        <img src="/assets/series-grimm/book-origins.png" alt="Grimm Cases Origins" />
+      </div>
+    </div>
+
+    <div class="blurb">
+      <section innerHTML="{{bookDesc}}"></section>
+    </div>        
+      
+    </div>
+  </div>
+</div>
 
 <div style="border: solid 1px black;">
-    <p>inside origins Component</p>
-    <br>
-    First Name: {{ bookLink }}
-    <br>
-    Last Name: {{ bookName }}
-    <br>
-    Siblings: {{ bookDesc }}
+  <p>inside origins Component</p>
+  <br>
+  Title: {{ bookName }}
+  <br>
+  <p [innerHTML]="bookDesc"></p>
 </div>

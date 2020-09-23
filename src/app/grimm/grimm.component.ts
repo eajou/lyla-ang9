@@ -9,9 +9,10 @@ export class GrimmComponent implements OnInit {
   constructor() { }
 
   // data
-  bookLink: string;
   bookName: string;
+  bookTag:  string;
   bookDesc: string;
+  bookLink: string;
 
   ngOnInit(): void {
   }
