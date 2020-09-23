@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GrimmOriginsComponent } from './grimm.origins.component';
+import { GrimmComponent } from './grimm.component';
 
-describe('GrimmOriginsComponent', () => {
-  let component: GrimmOriginsComponent;
-  let fixture: ComponentFixture<GrimmOriginsComponent>;
+describe('GrimmComponent', () => {
+  let component: GrimmComponent;
+  let fixture: ComponentFixture<GrimmComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GrimmOriginsComponent ]
+      declarations: [ GrimmComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GrimmOriginsComponent);
+    fixture = TestBed.createComponent(GrimmComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

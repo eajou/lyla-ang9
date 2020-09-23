@@ -15,6 +15,7 @@ import { RedComponent } from './red/red.component';
 import { ConsultingComponent } from './consulting/consulting.component';
 
 import { OriginsComponent } from './grimm/origins/origins.component';
+import { GrimmComponent } from './grimm/grimm.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { OriginsComponent } from './grimm/origins/origins.component';
     RedComponent,
     ConsultingComponent,
     OriginsComponent,
+    GrimmComponent,
   ],
   imports: [
     BrowserModule,

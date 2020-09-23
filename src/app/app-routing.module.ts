@@ -7,6 +7,7 @@ import { SeriesComponent } from './series/series.component';
 import { ConsultingComponent } from './consulting/consulting.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { GrimmComponent } from './grimm/grimm.component';
 import { OriginsComponent } from './grimm/origins/origins.component';
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'red', component: RedComponent },
   { path: 'consulting', component: ConsultingComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'grimm', component: GrimmComponent },
   { path: 'grimm-origins', component: OriginsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

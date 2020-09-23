@@ -5,11 +5,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lyla';
-
-  // data
-  // bookLink: string;
-  // bookName: string;
-  // bookDesc: string;
   
   ngOnInit(){}  
 }
