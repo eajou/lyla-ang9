@@ -1,5 +1,13 @@
 <app-header></app-header>
 
-<router-outlet></router-outlet>
+<div style="border: solid 1px black; padding:15px;">
+    <h3>Parent Component</h3> 
+    <app-child
+      [firstName]="firstName"
+      [lastName]="lastName"
+      [siblings]="siblings"></app-child>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
 
 <app-footer></app-footer>

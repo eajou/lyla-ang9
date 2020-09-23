@@ -1,26 +1,13 @@
-<div id="{{pageLink}}">
-  <app-hero></app-hero>
-
-  <div class="container">
-    <div class="subhead">
-      <div class="logo">
-        <img alt="Logo" src="/assets/series-grimm/logo.png" />
-      </div>    
-    </div> 
-  </div>    
-
-  <div id="" class="container">
-    <section>
-
-      <ul>
-        <li *ngFor="let book of books">
-          <a routerLink="grimm-{{ book.name }}" class="link">{{ book.name }}</a>
-          </li>
-      </ul>
-      <p *ngIf="books.length > 3">There are {{books.length}} books!</p>      
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    </section>
-  </div> 
+<div style="border: solid 1px black;">
+    <p>child Component</p>
+    <br>
+    First Name: {{ firstName }}
+    <br>
+    Last Name: {{ lastName }}
+    <br>
+    Siblings:
+    <br>
+    <span *ngFor="let sibling of siblings"> 
+        {{ sibling }} <br>.
+    </span>
 </div>
