@@ -1,22 +1,23 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Testability } from '@angular/core';
 import { Router } from '@angular/router';
 import { dashCaseToCamelCase } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-child',
-  templateUrl: './grimm.component.html'
+  templateUrl: './grimm.origins.component.html'
 })
-export class GrimmComponent implements OnInit {
+export class GrimmOriginsComponent implements OnInit {
 
   constructor(
     private router: Router,
   ) { }
 
-  @Input() firstName: string;
-  @Input() lastName: string;
-  @Input() siblings: [];  
+  @Input() bookLink: string;
+  @Input() bookName: string;
+  @Input() bookDesc: string;  
 
   ngOnInit(): void {
+    this.bookName = 'Origins';
   }
 
   pageLink = 'child';
