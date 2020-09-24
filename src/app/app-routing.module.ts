@@ -13,7 +13,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'series', component: SeriesComponent },
-  { path: 'detail/:id', component: BookDetailComponent },
+  { path: 'book/:id', component: BookDetailComponent },
   { path: 'grimm', component: GrimmComponent },
   { path: 'red', component: RedComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }

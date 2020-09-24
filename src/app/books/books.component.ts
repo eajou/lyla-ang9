@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { dashCaseToCamelCase } from '@angular/compiler/src/util';
 
 import { Book } from '../book';
 import { BookService } from '../book.service';
@@ -10,7 +12,10 @@ import { BookService } from '../book.service';
 export class BooksComponent implements OnInit {
   books: Book[];
 
-  constructor(private bookService: BookService) { }
+  constructor(
+    private bookService: BookService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.getBooks();
@@ -20,4 +25,10 @@ export class BooksComponent implements OnInit {
     this.bookService.getBooks()
     .subscribe(books => this.books = books);
   }
+
+  pageLink = 'grimm';
+
+  hasRoute(route: string) {
+    return this.router.url.includes(route);
+  }   
 }

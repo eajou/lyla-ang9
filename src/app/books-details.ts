@@ -18,49 +18,13 @@ export const BOOKS: Book[] = [
     name: 'Ghost' 
   },
   { 
-    series: 'Grimm',
+    series: 'Red',
     id: 3, 
-    name: 'Blood' 
-  }, 
+    name: 'Rising Sun' 
+  },  
   { 
     series: 'Grimm',
     id: 4, 
-    name: 'Hidden' 
-  }, 
-  { 
-    series: 'Grimm',
-    id: 5, 
-    name: 'Balance' 
-  }, 
-  { 
-    series: 'Grimm',
-    id: 6, 
-    name: 'Change' 
-  },    
-  { 
-    series: 'Grimm',
-    novella: true,
-    id: 6.5, 
-    name: 'Friend' 
-  },     
-  { 
-    series: 'Grimm',
-    id: 7, 
-    name: 'Bond' 
-  },    
-  { 
-    series: 'Red',
-    id: 1, 
-    name: 'Rising Sun' 
-  },    
-  { 
-    series: 'Red',
-    id: 2, 
-    name: 'The Longest Day' 
-  },    
-  { 
-    series: 'Red',
-    id: 3, 
-    name: 'Eternal Night' 
+    name: 'Blood' 
   }
 ];

@@ -12,17 +12,12 @@ export class BookService {
   constructor(private messageService: MessageService) { }
 
   getBooks(): Observable<Book[]> {
-    this.messageService.add('BookService: fetched books');
+    this.messageService.add('getBooks Service: fetched books');
     return of(BOOKS);
   }
 
   getBook(id: number): Observable<Book> {
-    this.messageService.add(`BookService: fetched book id=${id}`);
+    this.messageService.add(`getBook Service: fetched id=${id}`);
     return of(BOOKS.find(book => book.id === id));
-  }
-
-  getSeries(series: string): Observable<Book> {
-    this.messageService.add('BookService: fetched book series=${series}');
-    return of (BOOKS.find(book => book.series === series));
   }
 }
