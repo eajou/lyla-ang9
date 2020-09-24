@@ -265,6 +265,9 @@ section {
   box-sizing: border-box;
   padding: 30px; }
 
+.selected {
+  background: pink; }
+
 button {
   display: inline-block;
   position: relative;
