@@ -3,6 +3,12 @@ import { Book } from './book';
 export const BOOKS: Book[] = [
   { 
     series: 'Grimm',
+    novella: true,
+    id: .5, 
+    name: 'Home' 
+  },  
+  { 
+    series: 'Grimm',
     id: 1, 
     name: 'Origins' 
   },
@@ -16,6 +22,32 @@ export const BOOKS: Book[] = [
     id: 3, 
     name: 'Blood' 
   }, 
+  { 
+    series: 'Grimm',
+    id: 4, 
+    name: 'Hidden' 
+  }, 
+  { 
+    series: 'Grimm',
+    id: 5, 
+    name: 'Balance' 
+  }, 
+  { 
+    series: 'Grimm',
+    id: 6, 
+    name: 'Change' 
+  },    
+  { 
+    series: 'Grimm',
+    novella: true,
+    id: 6.5, 
+    name: 'Friend' 
+  },     
+  { 
+    series: 'Grimm',
+    id: 7, 
+    name: 'Bond' 
+  },    
   { 
     series: 'Red',
     id: 1, 

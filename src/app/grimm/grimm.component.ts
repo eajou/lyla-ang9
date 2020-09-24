@@ -26,7 +26,7 @@ export class GrimmComponent implements OnInit {
     .subscribe(books => this.books = books);
   }
 
-  pageLink = 'origins';
+  pageLink = 'grimm';
 
   hasRoute(route: string) {
     return this.router.url.includes(route);
