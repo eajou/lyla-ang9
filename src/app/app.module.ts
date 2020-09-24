@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SliderComponent } from './slider/slider.component';
+
+import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { SeriesComponent } from './series/series.component';
 import { BooksComponent } from './books/books.component';
 import { MessagesComponent } from './messages/messages.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
@@ -23,8 +26,10 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     AppComponent,
     DashboardComponent,
     SliderComponent,
+    HomeComponent,
     HeaderComponent,
     FooterComponent,
+    SeriesComponent,
     BooksComponent,
     MessagesComponent,
     BookDetailComponent

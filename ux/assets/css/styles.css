@@ -265,8 +265,8 @@ section {
   box-sizing: border-box;
   padding: 30px; }
 
-.selected {
-  background: pink; }
+section.no-padding {
+  padding: 0; }
 
 button {
   display: inline-block;
