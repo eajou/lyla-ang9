@@ -12,6 +12,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { SeriesComponent } from './series/series.component';
+import { GrimmComponent } from './grimm/grimm.component';
+
 import { BooksComponent } from './books/books.component';
 import { MessagesComponent } from './messages/messages.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
@@ -30,6 +32,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     HeaderComponent,
     FooterComponent,
     SeriesComponent,
+    GrimmComponent,
     BooksComponent,
     MessagesComponent,
     BookDetailComponent

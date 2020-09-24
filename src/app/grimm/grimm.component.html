@@ -1,10 +1,14 @@
-<p>grimm works!</p>
+<h2>Grimm Cases</h2>
+<p>More testing</p>
 
+<div class="books">
+  <div *ngFor="let book of books">
+    <div *ngIf="book.series == 'Grimm'">
+      <h1>{{book.name}}</h1> is GRIMM
+    </div>
 
-  <!-- Use this later to add a main series page (template) -->
-    <!-- <app-origins
-      [bookName]="bookName"
-      [bookOpening]="bookOpening"
-      [bookTag]="bookTag"
-      [bookDesc]="bookDesc"
-      [bookLink]="bookLink"></app-origins> -->
+    <!-- <a routerLink="/detail/{{book.id}}">
+      <span class="badge">{{book.id}}</span> {{book.name}} {{book.series}}
+    </a> -->
+  </div>
+</div>

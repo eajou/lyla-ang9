@@ -1,15 +1,6 @@
 <h2>My Heroes</h2>
 <div class="books">
   <div *ngFor="let book of books">
-
-    <!-- <div ng-if="book.series=='Grimm'">
-      {{book.name}} is GRIMM {{book.series}}
-    </div>
-
-    <div ng-if="book.series=='Red'">
-      {{book.name}} is NOT GRIMM
-    </div> -->
-
     <div *ngIf="book.series == 'Grimm'">
       <h1>{{book.name}}</h1> is GRIMM
     </div>
