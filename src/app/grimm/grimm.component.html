@@ -6,6 +6,8 @@
       
       <h2>Grimm Cases</h2>
 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
       <div class="books">
         <div *ngFor="let book of books">
           <div *ngIf="book.series == 'Grimm'">
@@ -30,22 +32,6 @@
             </ng-template>
           </div>
 
-          <!-- Call out Novella within Loop -->
-          <!-- <div *ngIf="book.series == 'Grimm'">
-            <div *ngIf="book.novella == true">
-              <div style="border:3px solid pink;">
-                <a routerLink="/detail/{{book.id}}">
-                  <span class="badge">{{book.id}}</span> NOVELLA {{book.name}} {{book.series}}
-                </a>                
-              </div>
-            </div>
-
-            <h1>{{book.name}}</h1> is GRIMM<br /><br />
-
-            <a routerLink="/detail/{{book.id}}">
-              <span class="badge">{{book.id}}</span> {{book.name}} {{book.series}}
-            </a>
-          </div> -->
         </div>
       </div>
 
