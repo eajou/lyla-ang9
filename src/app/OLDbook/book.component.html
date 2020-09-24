@@ -1,9 +1,0 @@
-<h1>Books Page</h1>
-
-<ul>
-<li *ngFor="let book of books">
-    <a routerLink="grimm-{{ book.name }}" class="link">{{ book.name }}</a><br />
-    <p [innerHTML]="book.desc"></p>
-    </li>
-</ul>
-<p *ngIf="books.length > 3">There are {{books.length}} books!</p> 
