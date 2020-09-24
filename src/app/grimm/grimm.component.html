@@ -6,7 +6,37 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <app-books></app-books>
+      <div class="books">
+        <div *ngFor="let book of books">
+          
+          <!-- The Grimm Cases -->
+          <div *ngIf="book.series == 'Grimm'">
+          
+            <!-- Call out Novella -->
+            <div *ngIf="book.novella == true;then novella else series"></div>    
+            
+            <ng-template #novella>
+              <h2>Novella Template</h2>
+              <div style="border:3px solid pink;">     
+                <a routerLink="/book/{{book.id}}">
+                  <span class="badge">{{book.id}}</span> NOVELLA {{book.name}} {{book.series}}
+                </a>  
+              </div>
+            </ng-template>
+            
+            <ng-template #series>
+              <h2>Series Template</h2>
+              <div style="border:3px solid purple;">
+                <a routerLink="/book/{{book.id}}">
+                  <span class="badge">{{book.id}}</span> SERIES {{book.name}} {{book.series}}
+                </a>                        
+              </div>              
+            </ng-template>
+          
+          </div>
+      
+        </div>
+      </div>
 
     </section>
   </div>

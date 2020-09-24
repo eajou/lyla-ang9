@@ -9,25 +9,11 @@
       <div class="books">
         <div *ngFor="let book of books">
           <div *ngIf="book.series == 'Red'">
-
-            <!-- Call out Novella -->
-            <div *ngIf="book.novella == true;then novella else series"></div>    
-            
-            <ng-template #novella>
-              <div style="border:3px solid pink;">
-                <a routerLink="/detail/{{book.id}}">
-                  <span class="badge">{{book.id}}</span> NOVELLA {{book.name}} {{book.series}}
-                </a>                
-              </div>
-            </ng-template>
-            
-            <ng-template #series>
-              <div style="border:3px solid purple;">
-                <a routerLink="/detail/{{book.id}}">
-                  <span class="badge">{{book.id}}</span> SERIES {{book.name}} {{book.series}}
-                </a>                
-              </div>              
-            </ng-template>
+            <div style="border:3px solid red;">
+              <a routerLink="/detail/{{book.id}}">
+                <span class="badge">{{book.id}}</span> RED {{book.name}} {{book.series}}
+              </a>                
+            </div>              
           </div>
 
         </div>
