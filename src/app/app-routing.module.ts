@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { SeriesComponent } from './series/series.component';
-import { ContactComponent } from './contact/contact.component';
-
-import { GrimmComponent } from './grimm/grimm.component';
-import { OriginsComponent } from './grimm/origins/origins.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BooksComponent } from './books/books.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'series', component: SeriesComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'grimm', component: GrimmComponent },
-  { path: 'grimm-origins', component: OriginsComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'detail/:id', component: BookDetailComponent },
+  { path: 'books', component: BooksComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'enabled'
-  })],
-  exports: [RouterModule]
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
