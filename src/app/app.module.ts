@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,12 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SeriesComponent } from './series/series.component';
 import { ContactComponent } from './contact/contact.component';
-import { HeroComponent } from './hero/hero.component';
-import { RedComponent } from './red/red.component';
-import { ConsultingComponent } from './consulting/consulting.component';
+// import { HeroComponent } from './hero/hero.component';
 
 import { OriginsComponent } from './grimm/origins/origins.component';
 import { GrimmComponent } from './grimm/grimm.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,15 +27,16 @@ import { GrimmComponent } from './grimm/grimm.component';
     HomeComponent,
     SeriesComponent,
     ContactComponent,
-    HeroComponent,
-    RedComponent,
-    ConsultingComponent,
+    // HeroComponent,
     OriginsComponent,
     GrimmComponent,
+    HeroesComponent,
+    HeroDetailComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
