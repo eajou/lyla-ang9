@@ -1,21 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { dashCaseToCamelCase } from '@angular/compiler/src/util';
+
+import { Book } from '../book';
+import { BookService } from '../book.service';
 
 @Component({
   selector: 'app-grimm',
   templateUrl: './grimm.component.html'
 })
 export class GrimmComponent implements OnInit {
+  books: Book[];
 
-  constructor() { }
+  constructor(
+    private bookService: BookService,
+    private router: Router
+  ) { }
 
-  // data
-  bookName:     string;
-  bookOpening:  string;
-  bookTag:      string;
-  bookDesc:     string;
-  bookLink:     string;
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getBooks();
   }
 
+  getBooks(): void {
+    this.bookService.getBooks()
+    .subscribe(books => this.books = books);
+  }
+
+  pageLink = 'grimm';
+
+  hasRoute(route: string) {
+    return this.router.url.includes(route);
+  }   
 }

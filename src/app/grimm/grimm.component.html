@@ -1,10 +1,55 @@
-<p>grimm works!</p>
+<div id="{{pageLink}}">
+  <app-slider></app-slider>   
+  
+  <div class="container">
+    <section>
+      
+      <h2>Grimm Cases</h2>
 
+      <div class="books">
+        <div *ngFor="let book of books">
+          <div *ngIf="book.series == 'Grimm'">
 
-  <!-- Use this later to add a main series page (template) -->
-    <!-- <app-origins
-      [bookName]="bookName"
-      [bookOpening]="bookOpening"
-      [bookTag]="bookTag"
-      [bookDesc]="bookDesc"
-      [bookLink]="bookLink"></app-origins> -->
+            <!-- Call out Novella -->
+            <div *ngIf="book.novella == true;then novella else series"></div>    
+            
+            <ng-template #novella>
+              <div style="border:3px solid pink;">
+                <a routerLink="/detail/{{book.id}}">
+                  <span class="badge">{{book.id}}</span> NOVELLA {{book.name}} {{book.series}}
+                </a>                
+              </div>
+            </ng-template>
+            
+            <ng-template #series>
+              <div style="border:3px solid purple;">
+                <a routerLink="/detail/{{book.id}}">
+                  <span class="badge">{{book.id}}</span> SERIES {{book.name}} {{book.series}}
+                </a>                
+              </div>              
+            </ng-template>
+          </div>
+
+          <!-- Call out Novella within Loop -->
+          <!-- <div *ngIf="book.series == 'Grimm'">
+            <div *ngIf="book.novella == true">
+              <div style="border:3px solid pink;">
+                <a routerLink="/detail/{{book.id}}">
+                  <span class="badge">{{book.id}}</span> NOVELLA {{book.name}} {{book.series}}
+                </a>                
+              </div>
+            </div>
+
+            <h1>{{book.name}}</h1> is GRIMM<br /><br />
+
+            <a routerLink="/detail/{{book.id}}">
+              <span class="badge">{{book.id}}</span> {{book.name}} {{book.series}}
+            </a>
+          </div> -->
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+</div>
