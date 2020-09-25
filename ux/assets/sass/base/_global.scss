@@ -1,15 +1,22 @@
 body {
   @include nospace;
 
-  background: $gray;
+  background-color: #060606;
+  background-image: url('./assets/bkg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;   
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
 
+// Fonts 
+
 h1, h2, h3, h4 {
 	font-family: $fancyFont;
-	color: #d5c9be;
+	color: $pink;
 	letter-spacing: 2px;
 	@include textShadow;
 }
@@ -68,6 +75,10 @@ p, a, li {
 	color: $white;
 }
 
+li {
+  list-style-position: inside;
+}
+
 p {
 	text-shadow: 1px 1px 1px #454341;	
 }
@@ -81,10 +92,16 @@ a.link {
 	text-transform: capitalize;
 }
 
+// Elements
 .container {
   max-width: 960px;
-  width: 100%;
-  margin: 0 auto;
+  margin: 50px auto;
+  background: $gray;
+  // filter: drop-shadow(0 0 30px #333);
+}
+
+.col {
+	margin: 30px;
 }
 
 .damask {

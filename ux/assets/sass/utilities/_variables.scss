@@ -15,9 +15,10 @@ $media-desktop: "screen and (min-width : 481px)";
 ============================================================
 */
 
-$gray:      #313130;
+$gray:      #2a2c27;
 $tan:       #c3b1a7;
 $white:		  #dfd7d5;
+$pink:      #f3b8b2;
 
 $mainBackgroundColor:			#313130;	 
 $secondaryBackgroundColor:		#282827;
@@ -29,10 +30,11 @@ $secondaryBackgroundColor:		#282827;
 ============================================================
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 $fancyFont:						'Cinzel Decorative', cursive;
-$normalFont:					'PT Serif', serif;
+$normalFont:					'Roboto', sans-serif;
 
 
 /*

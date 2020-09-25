@@ -1,14 +1,24 @@
 #pageTop {
-    display: block;
-    height: 60px;
-    width: 100%;
-    background: url('./assets/layout/main_damask.png') repeat;
+  display: block;
+  height: 60px;
+  width: 100%;
+  background: url('./assets/layout/main_damask.png') repeat;
 }
 
-header {
-    width: 100%;
+#pageTitle {
+  h1 {
+    text-align: center;
+  }
+}
+
+#pageTitle.container {
+  background: none;
+}
+
+#headImage {
+    width: calc(100% + 30px);
     height: 400px;
-    margin: 0;
+    margin: 0 0 0 -15px;
     padding: 0;
     box-sizing: border-box;
 

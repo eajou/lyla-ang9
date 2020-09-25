@@ -1,45 +1,39 @@
-section {
-  background: url('./assets/layout/paper.png');
-  box-sizing: border-box;
-  padding: 30px;
-
-  .two-third,
-  .one-third {
-    display: block;
-    float: left;
-  }
-
-  .one-third {
-    width: 30%;
-  }
-
-  .two-third {
-    width: 70%;
-  }
-
-  &:after {
-    @include clearFix;
-  }
+.content {
+  background: 
+  	linear-gradient(
+		to right, 
+		transparent 0%, 
+	  transparent 50%, 
+		$gray 50%, 
+		$gray 100%
+  );   
 }
 
-section.no-padding {
-  padding: 0;
-}
 
-section.no-background {
-  background-image: none;
-}
+// section {
+//   background: url('./assets/layout/paper.png');
+//   box-sizing: border-box;
+//   padding: 30px;
+// }
 
-.tan {
-  background: $tan;
-}
+// section.no-padding {
+//   padding: 0;
+// }
 
-.border {
-  border: 2px solid $tan;
-  box-sizing: border-box;
-  padding: 30px;
+// section.no-background {
+//   background-image: none;
+// }
 
-  &:after {
-    @include clearFix;
-  }  
-}
+// .tan {
+//   background: $tan;
+// }
+
+// .border {
+//   border: 2px solid $tan;
+//   box-sizing: border-box;
+//   padding: 30px;
+
+//   &:after {
+//     @include clearFix;
+//   }  
+// }

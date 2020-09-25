@@ -28,6 +28,7 @@ export class GrimmComponent implements OnInit {
     console.log('getBooks', this.books);
   }
 
+  pageTitle = 'The Grimm Cases';
   pageLink = 'grimm';
   
   hasRoute(route: string) {
