@@ -24,10 +24,12 @@ export class GrimmComponent implements OnInit {
   getBooks(): void {
     this.bookService.getBooks()
     .subscribe(books => this.books = books);
+
+    console.log('getBooks', this.books);
   }
 
   pageLink = 'grimm';
-
+  
   hasRoute(route: string) {
     return this.router.url.includes(route);
   }   

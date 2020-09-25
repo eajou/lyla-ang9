@@ -263,9 +263,36 @@ section {
   background: url("./assets/layout/paper.png");
   box-sizing: border-box;
   padding: 30px; }
+  section .two-third,
+  section .one-third {
+    display: block;
+    float: left; }
+  section .one-third {
+    width: 30%; }
+  section .two-third {
+    width: 70%; }
+  section:after {
+    content: "";
+    clear: both;
+    display: table; }
 
 section.no-padding {
   padding: 0; }
+
+section.no-background {
+  background-image: none; }
+
+.tan {
+  background: #c3b1a7; }
+
+.border {
+  border: 2px solid #c3b1a7;
+  box-sizing: border-box;
+  padding: 30px; }
+  .border:after {
+    content: "";
+    clear: both;
+    display: table; }
 
 button {
   display: inline-block;
@@ -416,7 +443,6 @@ footer {
         margin-bottom: -6px; }
 
 .books {
-  background: purple;
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -425,8 +451,11 @@ footer {
   padding: 0; }
   .books li {
     list-style: none;
-    flex: 1 1 300px;
+    flex: 1 1 250px;
     text-align: center;
     background-size: cover;
     background-position: top center;
-    height: 300px; }
+    height: 250px;
+    margin: 2%; }
+  .books .featured {
+    border: 13px solid gold; }

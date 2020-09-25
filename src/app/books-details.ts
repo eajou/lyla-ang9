@@ -8,6 +8,7 @@ export const BOOKS: Book[] = [
     name: 'Home' 
   },  
   { 
+    featured: true,
     series: 'Grimm',
     id: 1, 
     name: 'Origins' 
