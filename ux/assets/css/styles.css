@@ -415,30 +415,18 @@ footer {
       .series-display .book .image img {
         margin-bottom: -6px; }
 
-#origins .series,
-#origins .blurb > section {
-  display: block;
-  background-image: url("./assets/series-grimm/bkg-origins.png"); }
-  #origins .series .image,
-  #origins .blurb > section .image {
-    margin-bottom: -6px;
-    max-width: 100%; }
-
-#origins .series-display .book {
-  display: table; }
-  #origins .series-display .book .image,
-  #origins .series-display .book .info {
-    float: none;
-    display: table-cell;
-    vertical-align: middle; }
-  #origins .series-display .book .image {
-    margin-left: 0; }
-  #origins .series-display .book .info {
-    padding-right: 0;
-    padding-left: 60px; }
-
-#blood .series {
-  background-image: url("./assets/series-grimm/bkg-blood.png"); }
-
-#hidden .series {
-  background-image: url("./assets/series-grimm/bkg-hidden.png"); }
+.books {
+  background: purple;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+  .books li {
+    list-style: none;
+    flex: 1 1 300px;
+    text-align: center;
+    background-size: cover;
+    background-position: top center;
+    height: 300px; }

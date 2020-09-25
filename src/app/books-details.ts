@@ -26,5 +26,15 @@ export const BOOKS: Book[] = [
     series: 'Grimm',
     id: 4, 
     name: 'Blood' 
+  },  
+  { 
+    series: 'Grimm',
+    id: 5, 
+    name: 'Hidden' 
+  },  
+  { 
+    series: 'Grimm',
+    id: 6, 
+    name: 'Balance' 
   }
 ];

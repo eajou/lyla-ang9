@@ -1,0 +1,18 @@
+.books {
+  background: purple;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    flex: 1 1 300px;
+    text-align: center;
+    background-size: cover;
+    background-position: top center;
+    height: 300px;
+  }
+}
