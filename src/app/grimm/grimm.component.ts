@@ -19,6 +19,9 @@ export class GrimmComponent implements OnInit {
 
   ngOnInit() {
     this.getBooks();
+
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('seriesGrimm');  
   }
 
   getBooks(): void {
@@ -28,7 +31,6 @@ export class GrimmComponent implements OnInit {
     console.log('getBooks', this.books);
   }
 
-  pageTitle = 'The Grimm Cases';
   pageLink = 'grimm';
   
   hasRoute(route: string) {

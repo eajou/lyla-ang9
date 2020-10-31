@@ -36,9 +36,11 @@
     background-position: center center;
 }
 
-#grimm .hero {
-    background-image: url('./assets/series-grimm/header.png');
-    background-position: top left;
+#grimm {
+  .hero {
+      background-image: url('./assets/series-grimm/header.png');
+      background-position: top left;
+  }
 }
 
 #red .hero {

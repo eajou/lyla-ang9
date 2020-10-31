@@ -1,24 +1,15 @@
-.books {
-  box-sizing: border-box;
+.seriesGrimm {
+  background-image: url('./assets/series-grimm/bkg-header.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 
-  li {
-    list-style: none;
-    flex: 1 1 250px;
-    text-align: center;
-    background-size: cover;
-    background-position: top center;
-    height: 250px;
-    margin: 2%;
+  .container {
+    background: none;
   }
 
-  .featured {
-    border: 13px solid gold;
-    flex: 1 1 400px;
-    height: 400px;
-  }  
+  p {
+    color: $tan;
+  }
 }
