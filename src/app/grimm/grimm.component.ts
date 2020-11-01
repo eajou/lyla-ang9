@@ -21,7 +21,7 @@ export class GrimmComponent implements OnInit {
     this.getBooks();
 
     const body = document.getElementsByTagName('body')[0];
-    body.classList.add('seriesGrimm');  
+    body.classList.add('seriesGrimm', 'seriesSingle');  
   }
 
   getBooks(): void {

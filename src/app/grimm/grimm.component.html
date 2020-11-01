@@ -4,34 +4,54 @@
     <app-slider></app-slider> 
   
     <section ngClass="row">
-      <div ngClass="col">
+      <div ngClass="col-7 extra-padding-top">
         <h1>The Grimm Cases</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+        </blockquote>
       </div>
 
-      <div ngClass="col side-image">
-        <img src="./assets/series-grimm/bianca.png" />
-      </div>
-    </section>
-  
-    <section ngClass="row">
-      <div ngClass="col">
-        <h1>Series</h1>
+      <div ngClass="col-5 side-image">
+        <img src="./assets/series-grimm/bianca.png" class="full" />
       </div>
     </section>
-
-    <section ngClass="d-flex flex-wrap">
-      <ng-container *ngFor="let book of books"> 
-        <div *ngIf="book.series == 'Grimm'">
-          <img src="./assets/series-{{book.series | lowercase}}/thumb-{{book.name | lowercase}}.png"/>
-
-          <a href="{{book.link}}" target="_blank">
-            {{book.name}} {{book.series}}
-          </a> 
-
-        </div>
-      </ng-container>
-    </section>    
 
   </div>
+
+  <div ngClass="book-section extra-padding-top">
+    <div ngClass="container">
+  
+      <section ngClass="d-flex flex-wrap">
+        <ng-container *ngFor="let book of books"> 
+          <div *ngIf="book.series == 'Grimm'">
+            <img src="./assets/series-{{book.series | lowercase}}/thumb-{{book.name | lowercase}}.jpg"/>
+  
+            <div *ngIf="book.novella == true">
+              <p class="stand">Novella</p>
+            </div>
+  
+            <h2>
+              <span *ngIf="book.novella == true">
+                <span class="icon-novella"></span>
+              </span>
+
+              <span *ngIf="book.novella != true">
+                <span class="icon-book"></span>
+              </span>              
+
+              <a href="{{book.link}}" target="_blank">
+                {{book.name}} 
+              </a> 
+            </h2>
+  
+            <p>{{ book.blurb }}</p>
+  
+          </div>
+        </ng-container>
+      </section>    
+    </div>
+  </div>
+
 </div>

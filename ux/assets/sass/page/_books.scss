@@ -2,14 +2,50 @@
   background-image: url('./assets/series-grimm/bkg-header.png');
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
   width: 100%;
 
+  .book-section {
+    background-image: url('./assets/series-grimm/bkg-books.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;    
+  }
+}
+
+.seriesSingle {
   .container {
     background: none;
+    margin: 0 auto;
   }
 
-  p {
-    color: $tan;
+  h2 {
+    color: $pink;
+    font-family: $normalFont;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 18px;
+
+    a {
+      font-size: inherit;
+      color: inherit;
+      font-weight: inherit;
+      text-transform: uppercase;
+    }
+  } 
+  
+  .icon-book,
+  .icon-novella {
+    display: block;
+    width: 50px;
+    height: 50px;    
   }
+
+  .icon-book {
+    background: white;
+  }
+
+  .icon-novella {
+    background: yellow;
+  }  
 }

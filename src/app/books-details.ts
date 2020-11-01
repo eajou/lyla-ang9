@@ -12,7 +12,8 @@ export const BOOKS: Book[] = [
     series: 'Grimm',
     id: 1, 
     name: 'Origins',
-    link: 'http://books2read.com/grimm-origins'
+    link: 'http://books2read.com/grimm-origins',
+    blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
   { 
     series: 'Grimm',

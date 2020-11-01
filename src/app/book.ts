@@ -4,5 +4,6 @@ export interface Book {
     id: number;
     name: string;
     link: string;
+    blurb?: string;
   }
   

@@ -105,18 +105,23 @@ a.link {
 .col {
   margin: 30px; }
 
+.extra-padding-top {
+  padding-top: 50px; }
+
 .side-image img {
   width: 100%; }
 
+.side-image img.full {
+  width: 150%; }
+
 .flex-wrap {
-  background: red;
   width: 100%; }
   .flex-wrap div {
-    background: yellow;
-    width: 40%; }
+    width: 30%;
+    padding: 0 10px 20px 10px; }
     .flex-wrap div img {
-      width: 100%;
-      border: 2px solid purple; }
+      width: 90%;
+      margin: 0 0 20px 0; }
 
 .damask {
   background: url("./assets/layout/main_damask.png"); }
@@ -166,9 +171,38 @@ a.link {
   background-image: url("./assets/series-grimm/bkg-header.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
   width: 100%; }
-  .seriesGrimm .container {
-    background: none; }
-  .seriesGrimm p {
-    color: #c3b1a7; }
+  .seriesGrimm .book-section {
+    background-image: url("./assets/series-grimm/bkg-books.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%; }
+
+.seriesSingle .container {
+  background: none;
+  margin: 0 auto; }
+
+.seriesSingle h2 {
+  color: #f3b8b2;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px; }
+  .seriesSingle h2 a {
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    text-transform: uppercase; }
+
+.seriesSingle .icon-book,
+.seriesSingle .icon-novella {
+  display: block;
+  width: 50px;
+  height: 50px; }
+
+.seriesSingle .icon-book {
+  background: white; }
+
+.seriesSingle .icon-novella {
+  background: yellow; }

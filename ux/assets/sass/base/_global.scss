@@ -96,23 +96,30 @@ a.link {
 	margin: 30px;
 }
 
+.extra-padding-top {
+	padding-top: 50px;
+}
+
 .side-image {
 	img {
 		width: 100%;
 	}
+
+	img.full {
+		width: 150%;
+	}
 }
 
 .flex-wrap {
-	background: red;
 	width: 100%;
 
 	div {
-		background: yellow;
-		width: 40%;
+		width: 30%;
+		padding: 0 10px 20px 10px;
 
 		img {
-			width: 100%;
-			border: 2px solid purple;
+			width: 90%;
+			margin: 0 0 20px 0;
 		}
 	}
 }
