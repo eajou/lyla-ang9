@@ -16,32 +16,32 @@
 }
 
 #headImage {
-    width: 100%;
-    height: 400px;
-    padding: 0;
-    box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  padding: 0;
+  box-sizing: border-box;
 
-    .hero {
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
+  .hero {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
 }
 
 #home .hero {
-    background-image: url('./assets/layout/home.jpg');
-    background-position: center center;
+  background-image: url('./assets/layout/home.jpg');
+  background-position: center center;
 }
 
 .seriesGrimm {
   .hero {
-      background-image: url('./assets/series-grimm/header.png');
-      background-position: top left;
+    background-image: url('./assets/series-grimm/header.png');
+    background-position: top left;
   }
 }
 
 #red .hero {
-    background-image: url('./assets/series-red/header-red.png');
-    background-position: top left;
+  background-image: url('./assets/series-red/header-red.png');
+  background-position: top left;
 }

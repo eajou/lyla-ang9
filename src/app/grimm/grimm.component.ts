@@ -12,10 +12,16 @@ import { BookService } from '../book.service';
 export class GrimmComponent implements OnInit {
   books: Book[];
 
+  stateName='yellowbox';
+
   constructor(
     private bookService: BookService,
     private router: Router
   ) { }
+
+  switchState(){
+    this.stateName = this.stateName === 'yellowbox' ? 'redbox' : 'yellowbox'
+  }   
 
   ngOnInit() {
     this.getBooks();
