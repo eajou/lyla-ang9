@@ -1,8 +1,8 @@
+<app-dashboard></app-dashboard>
+
 <div id="{{pageLink}}" ngClass="content">
   <div ngClass="container">
 
-    <app-slider></app-slider> 
-  
     <section ngClass="row">
       <div ngClass="col-7 extra-padding-top">
         <h1>The Grimm Cases</h1>
@@ -19,39 +19,39 @@
     </section>
 
   </div>
-
-  <div ngClass="book-section extra-padding-top">
-    <div ngClass="container">
-  
-      <section ngClass="d-flex flex-wrap">
-        <ng-container *ngFor="let book of books"> 
-          <div *ngIf="book.series == 'Grimm'">
-            <img src="./assets/series-{{book.series | lowercase}}/thumb-{{book.name | lowercase}}.jpg"/>
-  
-            <div *ngIf="book.novella == true">
-              <p class="stand">Novella</p>
-            </div>
-  
-            <h2>
-              <span *ngIf="book.novella == true">
-                <span class="icon-novella"></span>
-              </span>
-
-              <span *ngIf="book.novella != true">
-                <span class="icon-book"></span>
-              </span>              
-
-              <a href="{{book.link}}" target="_blank">
-                {{book.name}} 
-              </a> 
-            </h2>
-  
-            <p>{{ book.blurb }}</p>
-  
-          </div>
-        </ng-container>
-      </section>    
-    </div>
-  </div>
-
 </div>
+
+<div ngClass="book-section paper">
+  <div ngClass="container">
+    <section ngClass="d-flex flex-wrap">
+      <ng-container *ngFor="let book of books"> 
+        <div *ngIf="book.series == 'Grimm'">
+          <img src="./assets/series-{{book.series | lowercase}}/thumb-{{book.name | lowercase}}.jpg"/>
+
+          <h2>
+            <span *ngIf="book.novella == true" ngClass="icon">
+              <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </span>
+
+            <span *ngIf="book.novella != true" ngClass="icon">
+              <i class="fa fa-book" aria-hidden="true"></i>
+            </span>              
+
+            <a href="{{book.link}}" target="_blank">
+              {{book.name}}
+            </a> 
+          </h2>
+
+          <h3 *ngIf="book.novella == true" ngClass="stand">
+            Novella
+          </h3>             
+
+          <p>{{ book.blurb }}</p>
+
+        </div>
+      </ng-container>
+    </section>   
+  </div> 
+</div>
+
+<app-slider></app-slider>  

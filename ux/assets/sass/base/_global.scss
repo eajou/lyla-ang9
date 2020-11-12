@@ -59,13 +59,19 @@ ul {
 	@include nospace;
 }
 
-p, a, li {
+p, li {
 	font-family: $normalFont;
 	font-size: 16px;
 	line-height: 32px;
 	letter-spacing: 1px;
 	font-weight: 200;
 	color: $white;
+}
+
+a {
+	color: $pink;
+	font-size: inherit;
+	font-weight: 600;
 }
 
 li {
@@ -88,7 +94,8 @@ a.link {
 // Elements
 .container {
   max-width: 960px;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 0;
   background: $gray;
 }
 
@@ -106,7 +113,8 @@ a.link {
 	}
 
 	img.full {
-		width: 150%;
+    // width: 150%;
+    width: 100%;
 	}
 }
 
@@ -125,11 +133,15 @@ a.link {
 }
 
 .damask {
-    background: url('./assets/layout/main_damask.png');
+  background: url('./assets/layout/main_damask.png');
+}
+
+.paper {
+	background: url('./assets/layout/paper.png');	
 }
 
 .space {
-    display: block;
-    height: 60px;
-    width: 100%;
+  display: block;
+  height: 60px;
+  width: 100%;
 }

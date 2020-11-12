@@ -76,13 +76,18 @@ ul {
   padding: 0;
   margin: 0; }
 
-p, a, li {
+p, li {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 32px;
   letter-spacing: 1px;
   font-weight: 200;
   color: #dfd7d5; }
+
+a {
+  color: #f3b8b2;
+  font-size: inherit;
+  font-weight: 600; }
 
 li {
   list-style-position: inside; }
@@ -99,7 +104,8 @@ a.link {
 
 .container {
   max-width: 960px;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 0;
   background: #2a2c27; }
 
 .col {
@@ -112,7 +118,7 @@ a.link {
   width: 100%; }
 
 .side-image img.full {
-  width: 150%; }
+  width: 100%; }
 
 .flex-wrap {
   width: 100%; }
@@ -125,6 +131,9 @@ a.link {
 
 .damask {
   background: url("./assets/layout/main_damask.png"); }
+
+.paper {
+  background: url("./assets/layout/paper.png"); }
 
 .space {
   display: block;
@@ -144,9 +153,8 @@ a.link {
   background: none; }
 
 #headImage {
-  width: calc(100% + 30px);
+  width: 100%;
   height: 400px;
-  margin: 0 0 0 -15px;
   padding: 0;
   box-sizing: border-box; }
   #headImage .hero {
@@ -159,7 +167,7 @@ a.link {
   background-image: url("./assets/layout/home.jpg");
   background-position: center center; }
 
-#grimm .hero {
+.seriesGrimm .hero {
   background-image: url("./assets/series-grimm/header.png");
   background-position: top left; }
 
@@ -167,16 +175,61 @@ a.link {
   background-image: url("./assets/series-red/header-red.png");
   background-position: top left; }
 
+.series-display {
+  width: 100%; }
+  .series-display .teaser {
+    width: 100%; }
+    .series-display .teaser img {
+      width: 100%; }
+  .series-display .series,
+  .series-display .book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: top left;
+    background-size: cover; }
+  .series-display .image,
+  .series-display .info {
+    flex: 1 0 0; }
+  .series-display .image {
+    max-width: 400px;
+    overflow: hidden; }
+    .series-display .image img {
+      width: 100%; }
+  .series-display .info {
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center; }
+  .series-display #seriesGrimm {
+    background-image: url("./assets/series/grimm-bkg.png"); }
+    .series-display #seriesGrimm img {
+      margin-bottom: -150px; }
+  .series-display #seriesRed {
+    background-image: url("./assets/series/red-bkg.png"); }
+    .series-display #seriesRed .image {
+      overflow: visible; }
+      .series-display #seriesRed .image img {
+        width: 120%;
+        margin-top: -30px;
+        margin-bottom: -6px; }
+  .series-display .book {
+    background-image: url("./assets/layout/paper.png"); }
+    .series-display .book:after {
+      content: "";
+      clear: both;
+      display: table; }
+    .series-display .book .image {
+      overflow: visible;
+      max-width: 600px; }
+      .series-display .book .image img {
+        margin-left: -90px;
+        width: 120%; }
+
 .seriesGrimm {
   background-image: url("./assets/series-grimm/bkg-header.png");
   background-repeat: no-repeat;
   background-position: top center;
   width: 100%; }
-  .seriesGrimm .book-section {
-    background-image: url("./assets/series-grimm/bkg-books.png");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    width: 100%; }
 
 .seriesSingle .container {
   background: none;
@@ -190,19 +243,22 @@ a.link {
   font-weight: 600;
   font-size: 18px; }
   .seriesSingle h2 a {
-    font-size: inherit;
     color: inherit;
-    font-weight: inherit;
     text-transform: uppercase; }
 
-.seriesSingle .icon-book,
-.seriesSingle .icon-novella {
+.seriesSingle h2 > .icon {
   display: block;
-  width: 50px;
-  height: 50px; }
+  float: left;
+  line-height: inherit;
+  margin: 0 5px 0 0; }
+  .seriesSingle h2 > .icon .fa {
+    font-size: inherit;
+    line-height: inherit; }
 
-.seriesSingle .icon-book {
-  background: white; }
-
-.seriesSingle .icon-novella {
-  background: yellow; }
+.seriesSingle h3 {
+  color: #c3b1a7;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: left; }

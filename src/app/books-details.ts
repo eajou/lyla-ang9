@@ -6,7 +6,8 @@ export const BOOKS: Book[] = [
     novella: true,
     id: .5, 
     name: 'Home',
-    link: 'http://books2read.com/grimm-home'
+    link: 'http://books2read.com/grimm-home',
+    blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },  
   { 
     series: 'Grimm',
@@ -19,7 +20,8 @@ export const BOOKS: Book[] = [
     series: 'Grimm',
     id: 2, 
     name: 'Ghost',
-    link: 'http://books2read.com/grimm-ghost'
+    link: 'http://books2read.com/grimm-ghost',
+    blurb: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
   { 
     series: 'Red',

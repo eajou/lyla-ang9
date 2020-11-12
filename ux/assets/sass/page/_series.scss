@@ -12,6 +12,7 @@
   .series,
   .book {
     display: flex;
+    align-items: center;
     justify-content: center;
     background-position: top left;
     background-size: cover;
@@ -61,29 +62,18 @@
     
   .book {
     background-image: url('./assets/layout/paper.png');
-    display: block;
 
     &:after {
       @include clearFix;
     }
     
-    .info {
-      display: block;
-      flex: none;
-      float: left;
-      max-width: 460px;
-    }
-
     .image {
-      display: block;
-      flex: none;
-      float: right;
       overflow: visible;   
       max-width: 600px;
-      margin-left: -100px;
 
       img {
-        margin-bottom: $image-align;
+        margin-left: -90px;
+        width: 120%;
       }
     }
   }

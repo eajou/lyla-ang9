@@ -16,14 +16,12 @@
 }
 
 #headImage {
-    width: calc(100% + 30px);
+    width: 100%;
     height: 400px;
-    margin: 0 0 0 -15px;
     padding: 0;
     box-sizing: border-box;
 
     .hero {
-        // background-attachment: fixed;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -36,7 +34,7 @@
     background-position: center center;
 }
 
-#grimm {
+.seriesGrimm {
   .hero {
       background-image: url('./assets/series-grimm/header.png');
       background-position: top left;

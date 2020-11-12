@@ -16,7 +16,6 @@ import { GrimmComponent } from './grimm/grimm.component';
 import { RedComponent } from './red/red.component';
 
 import { BooksComponent } from './books/books.component';
-import { MessagesComponent } from './messages/messages.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
@@ -36,7 +35,6 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     GrimmComponent,
     RedComponent,
     BooksComponent,
-    MessagesComponent,
     BookDetailComponent
   ],
   bootstrap: [ AppComponent ]

@@ -3,13 +3,6 @@
   background-repeat: no-repeat;
   background-position: top center;
   width: 100%;
-
-  .book-section {
-    background-image: url('./assets/series-grimm/bkg-books.png');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    width: 100%;    
-  }
 }
 
 .seriesSingle {
@@ -27,25 +20,29 @@
     font-size: 18px;
 
     a {
-      font-size: inherit;
       color: inherit;
-      font-weight: inherit;
       text-transform: uppercase;
     }
   } 
   
-  .icon-book,
-  .icon-novella {
+  h2 > .icon  {
     display: block;
-    width: 50px;
-    height: 50px;    
-  }
+    float: left;
+    line-height: inherit;
+    margin: 0 5px 0 0;
 
-  .icon-book {
-    background: white;
-  }
+    .fa {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  } 
 
-  .icon-novella {
-    background: yellow;
-  }  
+  h3 {
+    color: $tan;
+    font-family: $normalFont;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+  }
 }
